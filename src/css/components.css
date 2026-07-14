@@ -850,3 +850,93 @@
         box-shadow: 0 0 4px #4ade80;
     }
 }
+
+/* --- Estilo para el recuadro de la foto (debajo de LinkedIn) --- */
+.about-photo-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-photo-box:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.about-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-photo-box:hover .about-photo-img {
+    transform: scale(1.05);
+}
+
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+    text-align: center;
+}
+
+.photo-overlay span {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Limpieza y Estilo para CommentBox --- */
+
+/* Ajustamos el contenedor principal */
+#comentarios .commentbox {
+    background: transparent !important;
+    /* Quitamos el fondo propio del widget */
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Forzamos a que el interior sea más minimalista */
+#commentbox-container,
+.commentbox-container {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 20px !important;
+    padding: 25px !important;
+}
+
+/* Cambiamos el color del botón "Sign In" para que sea más elegante */
+.commentbox-container .button {
+    background-color: var(--accent) !important;
+    /* Usa tu color de acento principal */
+    border: none !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.commentbox-container .button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+/* Escondemos elementos innecesarios para que se vea más limpio */
+.commentbox-footer,
+.commentbox-header {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}

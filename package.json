@@ -12,5 +12,8 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "commentbox.io": "^2.1.0"
   }
 }

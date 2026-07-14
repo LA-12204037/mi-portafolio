@@ -112,51 +112,61 @@
 
         </div>
 
-
-
-        <!-- COLUMNA DERECHA: Textos principales y mini-tarjetas horizontales -->
-        <div class="about-content">
-          <h3 class="about-subtitle">Construyendo el futuro a través del código</h3>
-          <p class="about-text">
-            Soy un apasionado desarrollador de software enfocado en crear soluciones eficientes, escalables y
-            visualmente atractivas. Me especializo en conectar la solidez y lógica del <strong
-              class="highlight-orange">Backend
-              (Java/Spring)</strong> con la interactividad dinámica del <strong class="highlight-purple">Frontend
-              nativo</strong>.
-          </p>
-          <p class="about-text">
-            Mi filosofía de desarrollo se centra en escribir código limpio, diseñar bases de datos
-            optimizadas y buscar siempre la mejor experiencia para el usuario final.
-          </p>
-
-          <!-- Grid de Mini-Tarjetas Internas ordenadas en fila horizontal -->
-          <div class="about-stats-grid">
-            <div class="stat-card">
-              <div class="stat-image-container">
-                <img src="/src/assets/images.jpg" alt="Mi Enfoque" class="stat-card-img">
-              </div>
-              <h4>Mi Enfoque</h4>
-              <p>Desarrollo Full Stack centrado en rendimiento.</p>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-image-container">
-                <img src="/src/assets/que-es-la-filosofia-elmundodelabogado-1024x576.jpg" alt="Filosofía"
-                  class="stat-card-img">
-              </div>
-              <h4>Filosofía</h4>
-              <p>Aprendizaje continuo y adaptabilidad tecnológica.</p>
-            </div>
-
-            <div class="stat-card">
-              <div class="stat-image-container">
-                <img src="/src/assets/meta.jpg" alt="Meta" class="stat-card-img">
-              </div>
-              <h4>Meta</h4>
-              <p>Crear software de alto impacto real.</p>
-            </div>
+        <!-- APARTADO DE TU FOTO (Ahora está DENTRO de la columna izquierda) -->
+        <div class="about-photo-box">
+          <img src="assets/tu-foto.jpg" alt="Mi Foto" class="about-photo-img">
+          <div class="photo-overlay">
+            <span>Desarrollador Full Stack</span>
           </div>
         </div>
+
+      </div> <!-- ESTE ES EL CIERRE QUE CORRIGE TODO -->
+
+
+
+      <!-- COLUMNA DERECHA: Textos principales y mini-tarjetas horizontales -->
+      <div class="about-content">
+        <h3 class="about-subtitle">Construyendo el futuro a través del código</h3>
+        <p class="about-text">
+          Soy un apasionado desarrollador de software enfocado en crear soluciones eficientes, escalables y
+          visualmente atractivas. Me especializo en conectar la solidez y lógica del <strong
+            class="highlight-orange">Backend
+            (Java/Spring)</strong> con la interactividad dinámica del <strong class="highlight-purple">Frontend
+            nativo</strong>.
+        </p>
+        <p class="about-text">
+          Mi filosofía de desarrollo se centra en escribir código limpio, diseñar bases de datos
+          optimizadas y buscar siempre la mejor experiencia para el usuario final.
+        </p>
+
+        <!-- Grid de Mini-Tarjetas Internas ordenadas en fila horizontal -->
+        <div class="about-stats-grid">
+          <div class="stat-card">
+            <div class="stat-image-container">
+              <img src="/src/assets/images.jpg" alt="Mi Enfoque" class="stat-card-img">
+            </div>
+            <h4>Mi Enfoque</h4>
+            <p>Desarrollo Full Stack centrado en rendimiento.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-image-container">
+              <img src="/src/assets/que-es-la-filosofia-elmundodelabogado-1024x576.jpg" alt="Filosofía"
+                class="stat-card-img">
+            </div>
+            <h4>Filosofía</h4>
+            <p>Aprendizaje continuo y adaptabilidad tecnológica.</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-image-container">
+              <img src="/src/assets/meta.jpg" alt="Meta" class="stat-card-img">
+            </div>
+            <h4>Meta</h4>
+            <p>Crear software de alto impacto real.</p>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -392,3 +402,21 @@
 
 
 </html>
+
+<!-- SECCIÓN DE COMENTARIOS -->
+<section id="comentarios" class="container" style="margin-top: 80px; margin-bottom: 80px;">
+  <div class="section-title-container">
+    <h2 class="section-title">Comentarios de <span class="text-highlight">Visitas</span></h2>
+    <div class="title-line"></div>
+  </div>
+
+  <!-- Aquí es donde CommentBox inyectará el formulario -->
+  <div class="commentbox" style="margin-top: 30px;"></div>
+</section>
+
+
+<!-- Script de CommentBox.io -->
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>
+  commentBox('5728155998355456-proj');
+</script>
