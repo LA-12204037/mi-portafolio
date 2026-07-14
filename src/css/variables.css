@@ -1,0 +1,77 @@
+/* ==========================================================================
+   CONFIGURACIÓN DE VARIABLES GLOBALES (Paleta Dark Mode)
+   ========================================================================== */
+:root {
+    /* Colores de Fondo */
+    --bg-primary: #0f172a;
+    /* Gris azulado muy oscuro (Fondo principal) */
+    --bg-secondary: #1e293b;
+    /* Gris azulado medio (Tarjetas y contenedores) */
+    --bg-darker: #0b111e;
+    /* Negro técnico para el footer y detalles */
+
+    /* Colores de Acento (Interactividad) */
+    --accent: #38bdf8;
+    /* Azul cian brillante (Botones y enlaces resaltados) */
+    --accent-hover: #0284c7;
+    /* Azul cian oscuro para estados hover */
+    --accent-glow: rgba(56, 189, 248, 0.15);
+    /* Resplandor sutil para efectos focus */
+
+    /* Colores de Texto */
+    --text-main: #f8fafc;
+    /* Blanco hueso de alta legibilidad para títulos */
+    --text-muted: #94a3b8;
+    /* Gris claro texturizado para párrafos y descripciones */
+
+    /* Configuración de Estructura y Animaciones */
+    --max-width: 1200px;
+    /* Ancho máximo permitido para pantallas ultra anchas */
+    --transition-fast: all 0.2s ease;
+    --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --radius-md: 8px;
+    /* Bordes redondeados estándar para tarjetas */
+    --radius-sm: 4px;
+    /* Bordes redondeados para etiquetas y pequeños botones */
+}
+
+/* ==========================================================================
+   RESETEO BASE (CSS Reset para consistencia entre navegadores)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Desplazamiento suave al dar clic en el menú */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Evita scrolls horizontales accidentales en móviles */
+}
+
+/* ==========================================================================
+   CLASES DE UTILIDAD GENERAL (Reutilizables en todo el proyecto)
+   ========================================================================== */
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.text-highlight {
+    color: var(--accent);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}

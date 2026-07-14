@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Nombre | Portafolio Desarrollador</title>
+
+  <!-- Enlaces corregidos para el servidor de Vite -->
+  <link rel="stylesheet" href="/src/css/variables.css">
+  <link rel="stylesheet" href="/src/css/layout.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+
+<body>
+
+
+
+
+  <!-- =======================================================
+       1. BIENVENIDA (PANTALLA DE INICIO COMPLETA - HERO)
+       ======================================================= -->
+  <section id="bienvenida" class="hero-section">
+    <!-- Contenedor general del Hero -->
+    <div class="hero-container">
+      <h1 class="hero-title">
+        Hola, soy <span class="text-highlight">Luciano Alberto Montufar Villalta</span>
+      </h1>
+      <p class="hero-subtitle">Estudiante de Kinal con grandes aspiraciones a futuro y grandes sueños como metas en mi
+        vida profesional.</p>
+
+      <blockquote class="hero-quote">
+        Gran apoyo en trabajo en equipo, con gran capacidad de aprendizaje y de adaptación a nuevas tecnologías.
+      </blockquote>
+
+      <!-- Botón interactivo para avanzar con animación de boteo -->
+      <a href="#sobre-mi" class="btn btn-primary btn-hero" id="btn-explorar">
+        Explorar Portafolio
+        <span class="btn-icon">↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- =======================================================
+       BARRA DE NAVEGACIÓN PRINCIPAL (Sticky/Fija)
+       ======================================================= -->
+  <header class="main-header" id="main-nav">
+    <nav class="navbar container">
+      <!-- Tu marca o logotipo personal -->
+      <div class="nav-brand">
+        <a href="#bienvenida" class="brand-link">&lt;Dev<span class="text-highlight">Name</span>/&gt;</a>
+      </div>
+
+      <!-- Menú de navegación semántico -->
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#sobre-mi" class="nav-link active">Sobre Mí</a></li>
+        <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li class="nav-item"><a href="#educacion" class="nav-link">Educación</a></li>
+        <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor Semántico Principal -->
+  <main>
+
+    <!-- ==========================================================================
+     2. SECCIÓN: SOBRE MÍ (ABOUT ME) - REDISEÑO DE BALANCE COMPLETO
+     ========================================================================== -->
+    <section id="sobre-mi" class="about-section container">
+      <div class="section-title-container">
+        <h2 class="section-title">Sobre <span class="text-highlight">Mí</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- COLUMNA IZQUIERDA: Tarjetas Profesionales (CV + LinkedIn) rellenando el espacio -->
+        <div class="about-left-side">
+
+          <!-- TARJETA DEL CV -->
+          <div class="cv-bento-card">
+            <div class="cv-card-info">
+              <div class="cv-badge-status status-work">
+                <span class="status-dot green-dot"></span> Disponible para trabajar
+              </div>
+              <h4 class="cv-card-title">Mi Currículum</h4>
+              <p class="cv-card-subtitle">Descarga mi hoja de vida actualizada en formato PDF.</p>
+            </div>
+            <div class="cv-action-zone">
+              <a href="assets/tu-curriculum.pdf" download="CV_TuNombre.pdf" class="btn-download-cv">
+                <span class="btn-cv-icon">📥</span> Descargar CV
+              </a>
+            </div>
+          </div>
+
+          <!-- TARJETA DE LINKEDIN CON LUZ AZUL -->
+          <div class="cv-bento-card linkedin-card">
+            <div class="cv-card-info">
+              <div class="cv-badge-status status-linkedin">
+                <span class="status-dot blue-dot"></span> Conectar en Red
+              </div>
+              <h4 class="cv-card-title">Mi LinkedIn</h4>
+              <p class="cv-card-subtitle">Visita mi perfil para conectar e intercambiar ideas.</p>
+            </div>
+            <div class="cv-action-zone">
+              <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="btn-download-cv btn-linkedin">
+                <span class="btn-cv-icon">💼</span> Ver Perfil
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- COLUMNA DERECHA: Textos principales y mini-tarjetas horizontales -->
+        <div class="about-content">
+          <h3 class="about-subtitle">Construyendo el futuro a través del código</h3>
+          <p class="about-text">
+            Soy un apasionado desarrollador de software enfocado en crear soluciones eficientes, escalables y
+            visualmente atractivas. Me especializo en conectar la solidez y lógica del <strong
+              class="highlight-orange">Backend
+              (Java/Spring)</strong> con la interactividad dinámica del <strong class="highlight-purple">Frontend
+              nativo</strong>.
+          </p>
+          <p class="about-text">
+            Mi filosofía de desarrollo se centra en escribir código limpio, diseñar bases de datos
+            optimizadas y buscar siempre la mejor experiencia para el usuario final.
+          </p>
+
+          <!-- Grid de Mini-Tarjetas Internas ordenadas en fila horizontal -->
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-image-container">
+                <img src="/src/assets/images.jpg" alt="Mi Enfoque" class="stat-card-img">
+              </div>
+              <h4>Mi Enfoque</h4>
+              <p>Desarrollo Full Stack centrado en rendimiento.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-image-container">
+                <img src="/src/assets/que-es-la-filosofia-elmundodelabogado-1024x576.jpg" alt="Filosofía"
+                  class="stat-card-img">
+              </div>
+              <h4>Filosofía</h4>
+              <p>Aprendizaje continuo y adaptabilidad tecnológica.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-image-container">
+                <img src="/src/assets/meta.jpg" alt="Meta" class="stat-card-img">
+              </div>
+              <h4>Meta</h4>
+              <p>Crear software de alto impacto real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+     3. SECCIÓN: HABILIDADES (SKILLS) - CON ENLACES DINÁMICOS
+     ========================================================================== -->
+    <section id="habilidades" class="skills-section container">
+      <div class="section-title-container">
+        <h2 class="section-title">Mis <span class="text-highlight">Habilidades</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Tarjeta: Java -->
+        <div class="skill-card" data-skill="java">
+          <div class="skill-icon-badge badge-java">
+            <span class="tech-icon">☕</span>
+          </div>
+
+          <div class="circle-progress">
+            <svg class="circle-svg">
+              <defs>
+                <linearGradient id="grad-java" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ea580c" />
+                  <stop offset="100%" stop-color="#f97316" />
+                </linearGradient>
+              </defs>
+              <circle cx="70" cy="70" r="55" class="bg-circle"></circle>
+              <circle cx="70" cy="70" r="55" class="progress-bar" stroke="url(#grad-java)" stroke-dasharray="345">
+              </circle>
+            </svg>
+            <div class="percentage-text">85%</div>
+          </div>
+          <h3 class="skill-name">Java / Spring</h3>
+          <p class="skill-desc">Desarrollo de API Restful, persistencia de datos y lógica de negocio segura.</p>
+
+          <!-- Enlace corregido para Java -->
+          <a href="detalles.html?skill=java" class="skill-interactive-badge">Detalles ✨</a>
+        </div>
+
+        <!-- Tarjeta: SQL -->
+        <div class="skill-card" data-skill="sql">
+          <div class="skill-icon-badge badge-sql">
+            <span class="tech-icon">🗄️</span>
+          </div>
+
+          <div class="circle-progress">
+            <svg class="circle-svg">
+              <defs>
+                <linearGradient id="grad-sql" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00758f" />
+                  <stop offset="100%" stop-color="#00f2fe" />
+                </linearGradient>
+              </defs>
+              <circle cx="70" cy="70" r="55" class="bg-circle"></circle>
+              <circle cx="70" cy="70" r="55" class="progress-bar" stroke="url(#grad-sql)" stroke-dasharray="345">
+              </circle>
+            </svg>
+            <div class="percentage-text">70%</div>
+          </div>
+          <h3 class="skill-name">SQL & bases de datos</h3>
+          <p class="skill-desc">Diseño de esquemas relacionales, optimización de consultas y triggers.</p>
+
+          <!-- Enlace corregido para SQL -->
+          <a href="detalles.html?skill=sql" class="skill-interactive-badge">Detalles ✨</a>
+        </div>
+
+        <!-- Tarjeta: Frontend -->
+        <div class="skill-card" data-skill="frontend">
+          <div class="skill-icon-badge badge-front">
+            <span class="tech-icon">💻</span>
+          </div>
+
+          <div class="circle-progress">
+            <svg class="circle-svg">
+              <defs>
+                <linearGradient id="grad-front" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="100%" stop-color="#ec4899" />
+                </linearGradient>
+              </defs>
+              <circle cx="70" cy="70" r="55" class="bg-circle"></circle>
+              <circle cx="70" cy="70" r="55" class="progress-bar" stroke="url(#grad-front)" stroke-dasharray="345">
+              </circle>
+            </svg>
+            <div class="percentage-text">75%</div>
+          </div>
+          <h3 class="skill-name">HTML5 / CSS3 / JS</h3>
+          <p class="skill-desc">Estructuras semánticas, maquetación adaptiva y modularización frontend nativa.</p>
+
+          <!-- Enlace corregido para Frontend -->
+          <a href="detalles.html?skill=frontend" class="skill-interactive-badge">Detalles ✨</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         4. SECCIÓN: EDUCACIÓN (LÍNEA DE TIEMPO)
+         ======================================================= -->
+    <section id="educacion" class="education-section container">
+      <div class="section-title-container">
+        <h2 class="section-title">Mi <span class="text-highlight">Educación</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Hito 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024-2025 - Mis Inicios en la Programación</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Mis inicio en la programacion</h3>
+            <span class="timeline-institution">Como comenze en la programacion</span>
+            <p class="timeline-desc">
+              Inicié mi camino en el mundo de la programación con un enfoque en desarrollo web y bases de datos,
+              explorando tecnologías como HTML, CSS, JavaScript y SQL. Aprendí a construir sitios web interactivos y a
+              gestionar datos de manera eficiente gracias a la ayuda de mi profesores en estos espectaculares 3 años de
+              aprendizaje.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hito 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2026 - A futuro</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Que aprendi este año y que sera de mi futuro</h3>
+            <span class="timeline-institution">Perito en informática</span>
+            <p class="timeline-desc">
+              Mayomente este año me enfoque en aprender mas sobre el desarrollo de aplicaciones web y moviles, ademas de
+              aprender a trabajar en equipo y a desarrollar proyectos mas grandes y complejos, con el objetivo de
+              convertirme en un desarrollador completo y estar preparado para enfrentar los desafios del mundo laboral
+              en el futuro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hito 3 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Mis metas para el futuro</div>
+      <div class="timeline-content">
+        <h3 class="timeline-title">Mis metas para el futuro</h3>
+        <span class="timeline-institution">Mis metas para el futuro</span>
+        <p class="timeline-desc">
+          Mis metas para el futuro incluyen convertirme en un desarrollador de software altamente competente, capaz de
+          crear soluciones innovadoras y eficientes. Aspiro a trabajar en proyectos desafiantes que me permitan crecer
+          profesionalmente y contribuir al avance de la tecnología, siempre manteniendo un enfoque en la calidad y la
+          mejora continua.
+        </p>
+      </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- =======================================================
+         5. SECCIÓN: PROYECTOS
+         ======================================================= -->
+    <section id="proyectos" class="projects-section container">
+      <div class="section-title-container">
+        <h2 class="section-title">Mis <span class="text-highlight">Proyectos</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <article class="project-card">
+          <div class="project-image-placeholder">
+            <span>&lt;Java Script /&gt;</span>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">java Script / Node.js</span>
+            </span>
+            <h3 class="project-name">Ejerciocio de Agenda web</h3>
+            <p class="project-desc">
+              Desarrollo de una API RESTful para la gestión de tareas, con autenticación JWT y documentación Swagger.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/LA-12204037/Agenda--web.git" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Ver en GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card">
+          <div class="project-image-placeholder">
+            <span>&lt;MongoDB/ Node.js /&gt;</span>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">MongoDB / Node.js</span>
+            <h3 class="project-name">Papa Luigis (Sistema de Restaurante)</h3>
+            <p class="project-desc">
+              Un sistema de gestión de pedidos para un restaurante ficticio, utilizando MongoDB para la persistencia de
+              datos y Node.js para la lógica del servidor.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Marioescobar64/Sistema-restaurante.git" target="_blank"
+                rel="noopener noreferrer" class="project-link-btn">Ver en GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card">
+          <div class="project-image-placeholder">
+            <span>&lt;Java Script / HTML5 / CSS3&gt;</span>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Java Script / HTML5 / CSS3</span>
+            <h3 class="project-name">Portafolio Personal</h3>
+            <p class="project-desc">
+              Un portafolio web personal que muestra mis proyectos, habilidades y experiencia.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/LA-12204037/mi-portafolio.git" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">Ver en GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script principal importado correctamente dentro de body -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+
+</html>

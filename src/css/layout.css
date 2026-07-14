@@ -1,0 +1,183 @@
+/* ==========================================================================
+   DISEÑO ESTRUCTURAL (Layout, Flexbox y Grid)
+   ========================================================================== */
+
+/* Contenedor de la sección de Bienvenida (Hero) */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Ocupa exactamente el 100% del alto de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at top, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.hero-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN (Menú Sticky/Fijo)
+   ========================================================================== */
+.main-header {
+    background-color: rgba(15, 23, 42, 0.9);
+    /* Fondo translúcido con opacidad */
+    backdrop-filter: blur(8px);
+    /* Efecto de vidrio esmerilado */
+    position: sticky;
+    /* Se queda fijo al hacer scroll */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #334155;
+    transition: var(--transition-normal);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    height: 70px;
+}
+
+.nav-brand .brand-link {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-main);
+    letter-spacing: 0.5px;
+    transition: var(--transition-fast);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: var(--transition-fast);
+}
+
+/* Línea animada debajo de los enlaces del menú */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent);
+}
+
+/* ==========================================================================
+   ESTRUCTURA SECCIÓN SOBRE MÍ
+   ========================================================================== */
+.about-section {
+    padding: 100px 0;
+    /* Espaciado generoso arriba y abajo */
+}
+
+.section-title-container {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    margin-top: 10px;
+    border-radius: var(--radius-sm);
+}
+
+/* Rejilla de dos columnas (Se adaptará automáticamente a móviles más adelante) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    /* La columna de texto es un poco más ancha */
+    gap: 50px;
+    align-items: start;
+}
+
+/* ==========================================================================
+   ESTRUCTURA SECCIÓN HABILIDADES
+   ========================================================================== */
+.skills-section {
+    padding: 100px 0;
+    border-top: 1px solid #1e293b;
+}
+
+/* Rejilla de 3 columnas para las tecnologías principales */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   ESTRUCTURA SECCIÓN EDUCACIÓN (Línea de Tiempo)
+   ========================================================================== */
+.education-section {
+    padding: 100px 0;
+    border-top: 1px solid #1e293b;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding-left: 30px;
+    border-left: 2px solid #334155;
+    /* La línea vertical central de la cronología */
+}
+
+/* ==========================================================================
+   ESTRUCTURA SECCIÓN PROYECTOS
+   ========================================================================== */
+.projects-section {
+    padding: 100px 0;
+    border-top: 1px solid #1e293b;
+}
+
+/* Grilla responsive que se ajustará a 3 columnas automáticamente */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
