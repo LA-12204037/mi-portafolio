@@ -87,7 +87,7 @@
               <p class="cv-card-subtitle">Descarga mi hoja de vida actualizada en formato PDF.</p>
             </div>
             <div class="cv-action-zone">
-              <a href="assets/tu-curriculum.pdf" download="CV_TuNombre.pdf" class="btn-download-cv">
+              <a href="assets/curriculum.jpg" download="CV_TuNombre.pdf" class="btn-download-cv">
                 <span class="btn-cv-icon">📥</span> Descargar CV
               </a>
             </div>
@@ -113,7 +113,7 @@
 
         <!-- APARTADO DE TU FOTO (Ahora está DENTRO de la columna izquierda) -->
         <div class="about-photo-box">
-          <img src="assets/tu-foto.jpg" alt="Mi Foto" class="about-photo-img">
+          <img src="assets/mifoto.jpeg" alt="Mi Foto" class="about-photo-img">
           <div class="photo-overlay">
             <span>Desarrollador Full Stack</span>
           </div>
@@ -204,7 +204,7 @@
           <p class="skill-desc">Desarrollo de API Restful, persistencia de datos y lógica de negocio segura.</p>
 
           <!-- Enlace corregido para Java -->
-          <a href="detalles.html?skill=java" class="skill-interactive-badge">Detalles ✨</a>
+          <a href="./detalles.html?skill=java" class="skill-interactive-badge">Detalles ✨</a>
         </div>
 
         <!-- Tarjeta: SQL -->
@@ -231,7 +231,7 @@
           <p class="skill-desc">Diseño de esquemas relacionales, optimización de consultas y triggers.</p>
 
           <!-- Enlace corregido para SQL -->
-          <a href="detalles.html?skill=sql" class="skill-interactive-badge">Detalles ✨</a>
+          <a href="./detalles.html?skill=sql" class="skill-interactive-badge">Detalles ✨</a>
         </div>
 
         <!-- Tarjeta: Frontend -->
@@ -258,7 +258,7 @@
           <p class="skill-desc">Estructuras semánticas, maquetación adaptiva y modularización frontend nativa.</p>
 
           <!-- Enlace corregido para Frontend -->
-          <a href="detalles.html?skill=frontend" class="skill-interactive-badge">Detalles ✨</a>
+          <a href="./detalles.html?skill=frontend" class="skill-interactive-badge">Detalles ✨</a>
         </div>
       </div>
     </section>
@@ -395,27 +395,25 @@
 
   </main>
 
+  <!-- SECCIÓN DE COMENTARIOS -->
+  <section id="comentarios" class="container" style="margin-top: 80px; margin-bottom: 80px;">
+    <div class="section-title-container">
+      <h2 class="section-title">Comentarios de <span class="text-highlight">Visitas</span></h2>
+      <div class="title-line"></div>
+    </div>
+
+    <!-- Aquí es donde CommentBox inyectará el formulario -->
+    <div class="commentbox" style="margin-top: 30px;"></div>
+  </section>
+
   <!-- Script principal importado correctamente dentro de body -->
   <script type="module" src="js/main.js"></script>
+
+  <!-- Script de CommentBox.io -->
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+  <script>
+    commentBox('5728155998355456-proj');
+  </script>
 </body>
 
-
 </html>
-
-<!-- SECCIÓN DE COMENTARIOS -->
-<section id="comentarios" class="container" style="margin-top: 80px; margin-bottom: 80px;">
-  <div class="section-title-container">
-    <h2 class="section-title">Comentarios de <span class="text-highlight">Visitas</span></h2>
-    <div class="title-line"></div>
-  </div>
-
-  <!-- Aquí es donde CommentBox inyectará el formulario -->
-  <div class="commentbox" style="margin-top: 30px;"></div>
-</section>
-
-
-<!-- Script de CommentBox.io -->
-<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-<script>
-  commentBox('5728155998355456-proj');
-</script>

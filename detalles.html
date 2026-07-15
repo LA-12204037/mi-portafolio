@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de Habilidad - Mi Portafolio</title>
-    <link rel="stylesheet" href="src/css/components.css">
+    <!-- RUTA CORREGIDA: Sin /src/ -->
+    <link rel="stylesheet" href="./css/components.css">
     <style>
-        /* Estilos exclusivos y optimizados para la página de detalles */
+        /* Estilos optimizados */
         body {
             background-color: #0f172a;
             color: #f8fafc;
@@ -28,12 +29,9 @@
             padding: 40px;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             text-align: center;
-            position: relative;
         }
 
-        /* Contenedor del emoji principal */
         .badge-icon {
             width: 70px;
             height: 70px;
@@ -43,11 +41,9 @@
             justify-content: center;
             font-size: 2.2rem;
             margin: 0 auto 20px auto;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
-        /* Clases de gradientes dinámicos importadas */
         .badge-java {
             background: linear-gradient(135deg, #ea580c, #f97316);
         }
@@ -63,10 +59,8 @@
         .skill-title {
             font-size: 2.4rem;
             font-weight: 800;
-            margin-top: 0;
             margin-bottom: 15px;
             background: linear-gradient(to right, #ffffff, #94a3b8);
-            /* Agregamos ambas versiones para compatibilidad total y evitar errores */
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -80,7 +74,6 @@
             text-align: justify;
         }
 
-        /* Contenedor de etiquetas/tecnologías */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -97,10 +90,8 @@
             font-size: 0.85rem;
             font-weight: 600;
             color: rgba(255, 255, 255, 0.9);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
 
-        /* Botón Volver Premium */
         .btn-back {
             display: inline-block;
             text-decoration: none;
@@ -110,21 +101,12 @@
             padding: 12px 28px;
             border-radius: 30px;
             font-weight: 600;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.3s ease;
         }
 
         .btn-back:hover {
             background: #ffffff;
             color: #0f172a;
-            border-color: #ffffff;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
-        }
-
-        .btn-back:active {
-            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -132,20 +114,17 @@
 <body>
 
     <div class="details-container">
-        <!-- El JS cambiará dinámicamente el contenido de estas etiquetas -->
         <div id="skill-badge" class="badge-icon">☕</div>
         <h1 id="skill-title" class="skill-title">Cargando Habilidad...</h1>
         <p id="skill-desc" class="skill-full-desc">Obteniendo la información detallada desde el repositorio local...</p>
 
-        <!-- Tecnologías y herramientas secundarias -->
         <div id="tech-stack" class="tech-stack"></div>
 
-        <!-- Enlace de regreso con ancla directo a tu sección original -->
-        <a href="index.html#habilidades" class="btn-back">← Volver al Inicio</a>
+        <a href="./index.html#habilidades" class="btn-back">← Volver al Inicio</a>
     </div>
 
-    <!-- Vinculación del script que maneja la lógica de la URL -->
-    <script src="src/js/details.js"></script>
+    <!-- RUTA CORREGIDA: Sin /src/ -->
+    <script src="./js/details.js"></script>
 </body>
 
 </html>
