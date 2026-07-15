@@ -22,24 +22,34 @@
 @media (max-width: 992px) {
 
     .main-header {
-        position: relative;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(8px);
+        z-index: 1000;
+        padding: 0 16px;
     }
 
     .main-header .navbar,
     .navbar {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         gap: 12px;
     }
 
     .brand-link {
         font-size: 1.4rem;
+        margin-right: auto;
     }
 
     .nav-menu {
+        width: 100%;
         gap: 14px;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        margin-top: 8px;
     }
 
     .about-section,
