@@ -31,12 +31,15 @@
         padding: 0 16px;
     }
 
+    .mobile-menu-btn {
+        display: block;
+    }
+
     .main-header .navbar,
     .navbar {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        gap: 12px;
     }
 
     .brand-link {
@@ -45,11 +48,39 @@
     }
 
     .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
         width: 100%;
-        gap: 14px;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        margin-top: 8px;
+        background-color: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+        padding: 20px 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: all 0.4s ease;
+        pointer-events: none;
+        z-index: 90;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px 0;
+        font-size: 1.2rem;
     }
 
     .about-section,

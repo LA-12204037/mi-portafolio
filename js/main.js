@@ -7,6 +7,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('main-nav');
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    /* ==========================================================================
+       0. MENÚ MÓVIL (Toggle)
+       ========================================================================== */
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Cerrar el menú al hacer clic en un enlace
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
 
     /* ==========================================================================
        1. EFECTO DEL HEADER AL HACER SCROLL (Cambio de tamaño)
