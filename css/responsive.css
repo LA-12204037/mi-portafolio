@@ -21,6 +21,10 @@
 
 @media (max-width: 992px) {
 
+    .main-header {
+        position: relative;
+    }
+
     .main-header .navbar,
     .navbar {
         flex-wrap: wrap;
@@ -28,8 +32,12 @@
         gap: 12px;
     }
 
+    .brand-link {
+        font-size: 1.4rem;
+    }
+
     .nav-menu {
-        gap: 16px;
+        gap: 14px;
         justify-content: center;
         flex-wrap: wrap;
     }
