@@ -192,6 +192,21 @@
 }
 
 /* ==========================================================================
+   ESTRUCTURA SECCIÓN FORTALEZAS
+   ========================================================================== */
+.fortalezas-section {
+    padding: 100px 0;
+    border-top: 1px solid var(--bg-secondary);
+}
+
+.fortalezas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* ==========================================================================
    ESTRUCTURA SECCIÓN EDUCACIÓN (Línea de Tiempo)
    ========================================================================== */
 .education-section {
