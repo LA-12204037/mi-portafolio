@@ -982,11 +982,11 @@
 .commentbox-container {
     width: 100% !important;
     max-width: 100% !important;
-    background: rgba(15, 23, 42, 0.95) !important;
-    border: 1px solid rgba(56, 189, 248, 0.18) !important;
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--bg-darker) !important;
     border-radius: 28px !important;
     padding: 28px !important;
-    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35) !important;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.1) !important;
 }
 
 .commentbox-container .button {
@@ -1009,23 +1009,23 @@
 .commentbox-container .commentbox-field,
 .commentbox-container .comment-input,
 .commentbox-container .commentbox-textarea {
-    background: rgba(255, 255, 255, 0.06) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    color: #e2e8f0 !important;
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--bg-darker) !important;
+    color: var(--text-main) !important;
     border-radius: 14px !important;
 }
 
 .commentbox-container input::placeholder,
 .commentbox-container textarea::placeholder {
-    color: rgba(226, 232, 240, 0.6) !important;
+    color: var(--text-muted) !important;
 }
 
 .commentbox-container .commentbox-row,
 .commentbox-container .commentbox-item,
 .commentbox-container .comment,
 .commentbox-container .commentbox-comment {
-    background: rgba(255, 255, 255, 0.03) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--bg-darker) !important;
     border-radius: 22px !important;
 }
 
@@ -1034,19 +1034,19 @@
 .commentbox-container .commentbox-text,
 .commentbox-container .commentbox-message,
 .commentbox-container .comment-text {
-    color: #e2e8f0 !important;
+    color: var(--text-main) !important;
 }
 
 .commentbox-container .commentbox-avatar,
 .commentbox-container .commentbox-username,
 .commentbox-container .commentbox-time {
-    color: rgba(226, 232, 240, 0.8) !important;
+    color: var(--text-muted) !important;
 }
 
 .commentbox-footer,
 .commentbox-header,
 .commentbox-container .commentbox-row {
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: var(--bg-darker) !important;
 }
 
 .commentbox-container .commentbox-header {
@@ -1054,7 +1054,7 @@
 }
 
 .commentbox-container .commentbox-label {
-    color: rgba(226, 232, 240, 0.75) !important;
+    color: var(--text-muted) !important;
 }
 
 .commentbox-container .commentbox-submit {
@@ -1069,7 +1069,7 @@
 }
 
 .commentbox-container .commentbox-avatar {
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid var(--bg-darker) !important;
 }
 
 .commentbox-container .commentbox-item {
