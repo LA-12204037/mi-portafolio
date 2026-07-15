@@ -180,7 +180,7 @@
    ========================================================================== */
 .skills-section {
     padding: 100px 0;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--bg-secondary);
 }
 
 /* Rejilla de 3 columnas para las tecnologías principales */
@@ -196,7 +196,7 @@
    ========================================================================== */
 .education-section {
     padding: 100px 0;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--bg-secondary);
 }
 
 .timeline {
@@ -204,7 +204,7 @@
     max-width: 800px;
     margin: 40px auto 0 auto;
     padding-left: 30px;
-    border-left: 2px solid #334155;
+    border-left: 2px solid var(--bg-darker);
     /* La línea vertical central de la cronología */
 }
 
@@ -213,7 +213,7 @@
    ========================================================================== */
 .projects-section {
     padding: 100px 0;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--bg-secondary);
 }
 
 /* Grilla responsive que se ajustará a 3 columnas automáticamente */

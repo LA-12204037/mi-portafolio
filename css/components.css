@@ -59,7 +59,7 @@
     transform: translateY(-2px);
 }
 
-/* Animación de rebote sutil para el botón de explorar */
+/* AnimaciÃ³n de rebote sutil para el botÃ³n de explorar */
 @keyframes bounce {
 
     0%,
@@ -81,7 +81,7 @@
 
 
 /* ==========================================================================
-   2. BARRA DE NAVEGACIÓN PRINCIPAL (HEADER & NAVBAR)
+   2. BARRA DE NAVEGACIÃ“N PRINCIPAL (HEADER & NAVBAR)
    ========================================================================== */
 .main-header {
     position: fixed;
@@ -103,7 +103,7 @@
 .brand-link {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-main);
     text-decoration: none;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -128,7 +128,7 @@
     color: var(--accent);
 }
 
-/* Subrayado animado para el menú */
+/* Subrayado animado para el menÃº */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -145,10 +145,10 @@
     width: 100%;
 }
 
-/* --- Rediseño de Tarjetas de Enfoque / Filosofía con Imagen --- */
+/* --- RediseÃ±o de Tarjetas de Enfoque / FilosofÃ­a con Imagen --- */
 .stat-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.005) 100%) !important;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--bg-darker);
     padding: 16px !important;
     /* Espacio optimizado */
     border-radius: 20px !important;
@@ -163,7 +163,7 @@
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 15px;
-    background: #1e293b;
+    background: var(--bg-secondary);
     /* Fondo de carga */
 }
 
@@ -199,8 +199,8 @@
 /* --- Estilos Base para las Tarjetas Bento Flexibles (CV y LinkedIn) --- */
 .cv-bento-card {
     padding: 24px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.005) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: var(--bg-secondary);
+    border: 1px solid var(--bg-darker);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -220,13 +220,13 @@
     box-shadow: 0 15px 30px rgba(74, 222, 128, 0.05);
 }
 
-/* Variante de Hover para la de LinkedIn (Borde Azul Neón) */
+/* Variante de Hover para la de LinkedIn (Borde Azul NeÃ³n) */
 .linkedin-card:hover {
     border-color: rgba(59, 130, 246, 0.4) !important;
     box-shadow: 0 15px 30px rgba(59, 130, 246, 0.1) !important;
 }
 
-/* --- Badges de Estado e Indicadores de Luz de Neón --- */
+/* --- Badges de Estado e Indicadores de Luz de NeÃ³n --- */
 .cv-badge-status {
     display: inline-flex;
     align-items: center;
@@ -273,14 +273,14 @@
 .cv-card-title {
     margin: 0 0 6px 0;
     font-size: 1.15rem;
-    color: #ffffff;
+    color: var(--text-main);
     font-weight: 700;
 }
 
 .cv-card-subtitle {
     margin: 0;
     font-size: 0.85rem;
-    color: #64748b;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
@@ -291,7 +291,7 @@
     justify-content: center;
     gap: 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 0.88rem;
     font-weight: 600;
     padding: 10px 20px;
@@ -307,10 +307,10 @@
 .btn-download-cv:hover {
     background: #ffffff;
     color: #0f172a;
-    border-color: #ffffff;
+    border-color: var(--text-main);
 }
 
-/* Hover específico para el botón de LinkedIn */
+/* Hover especÃ­fico para el botÃ³n de LinkedIn */
 .btn-linkedin:hover {
     background: #3b82f6 !important;
     color: #ffffff !important;
@@ -342,7 +342,7 @@
 }
 
 /* ==========================================================================
-   SECCIÓN: HABILIDADES (SKILLS) - ESTILOS DEFINITIVOS
+   SECCIÃ“N: HABILIDADES (SKILLS) - ESTILOS DEFINITIVOS
    ========================================================================== */
 
 .skills-section {
@@ -359,9 +359,9 @@
 
 /* Tarjetas de Habilidad */
 .skill-card {
-    background-color: #1e293b;
+    background-color: var(--bg-secondary);
     /* Fondo oscuro azulado elegante */
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--bg-darker);
     border-radius: 20px;
     padding: 62px 30px 30px 30px;
     text-align: center;
@@ -393,7 +393,7 @@
     z-index: 10;
 }
 
-/* Asignación de Gradientes a los Badges */
+/* AsignaciÃ³n de Gradientes a los Badges */
 .badge-java {
     background: linear-gradient(135deg, #ea580c, #f97316);
 }
@@ -428,7 +428,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-darker);
     border-radius: 50%;
 }
 
@@ -438,7 +438,7 @@
     width: calc(100% - 18px);
     height: calc(100% - 18px);
     border-radius: 50%;
-    background: rgba(15, 23, 42, 0.92);
+    background: var(--bg-primary);
     top: 9px;
     left: 9px;
 }
@@ -451,10 +451,10 @@
     transform: rotate(-90deg);
 }
 
-/* Círculo de Fondo (Canaleta Gris) */
+/* CÃ­rculo de Fondo (Canaleta Gris) */
 .circle-svg .bg-circle {
     fill: none;
-    stroke: rgba(255, 255, 255, 0.07);
+    stroke: var(--bg-darker);
     stroke-width: 10;
 }
 
@@ -463,7 +463,7 @@
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    /* Inicialmente en 0 para animación */
+    /* Inicialmente en 0 para animaciÃ³n */
     stroke-dasharray: 0, 345.575 !important;
     transition: stroke-dasharray 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -475,24 +475,24 @@
     font-family: sans-serif;
 }
 
-/* Textos e Información de la Tarjeta */
+/* Textos e InformaciÃ³n de la Tarjeta */
 .skill-name {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-main);
     margin-bottom: 12px;
 }
 
 .skill-desc {
     font-size: 0.95rem;
-    color: #94a3b8;
+    color: var(--text-muted);
     /* Gris suave legible */
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 /* Enlace / Badge de Detalles */
-/* Botón interactivo de detalles modernizado */
+/* BotÃ³n interactivo de detalles modernizado */
 .skill-interactive-badge {
     display: inline-block;
     margin-top: 1.5rem;
@@ -510,9 +510,9 @@
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-/* Efecto Hover dinámico adaptado al color de cada tecnología */
+/* Efecto Hover dinÃ¡mico adaptado al color de cada tecnologÃ­a */
 .skill-card[data-skill="java"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(249, 115, 22, 0.15);
     border-color: rgba(249, 115, 22, 0.4);
     box-shadow: 0 0 15px rgba(249, 115, 22, 0.2),
@@ -521,7 +521,7 @@
 }
 
 .skill-card[data-skill="sql"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(0, 242, 254, 0.12);
     border-color: rgba(0, 242, 254, 0.4);
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.2),
@@ -530,7 +530,7 @@
 }
 
 .skill-card[data-skill="frontend"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(236, 72, 153, 0.12);
     border-color: rgba(236, 72, 153, 0.4);
     box-shadow: 0 0 15px rgba(236, 72, 153, 0.2),
@@ -539,7 +539,7 @@
 }
 
 .skill-card[data-skill="spring"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(74, 222, 128, 0.14);
     border-color: rgba(74, 222, 128, 0.4);
     box-shadow: 0 0 15px rgba(74, 222, 128, 0.2),
@@ -548,7 +548,7 @@
 }
 
 .skill-card[data-skill="css3"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(59, 130, 246, 0.14);
     border-color: rgba(59, 130, 246, 0.4);
     box-shadow: 0 0 15px rgba(59, 130, 246, 0.2),
@@ -557,7 +557,7 @@
 }
 
 .skill-card[data-skill="javascript"]:hover .skill-interactive-badge {
-    color: #ffffff;
+    color: var(--text-main);
     background: rgba(249, 115, 22, 0.14);
     border-color: rgba(249, 115, 22, 0.4);
     box-shadow: 0 0 15px rgba(249, 115, 22, 0.2),
@@ -565,7 +565,7 @@
     transform: translateY(-3px);
 }
 
-/* Pequeño brinco al hacer click */
+/* PequeÃ±o brinco al hacer click */
 .skill-interactive-badge:active {
     transform: translateY(-1px) scale(0.98);
 }
@@ -575,7 +575,7 @@
     text-decoration: underline;
 }
 
-/* Efectos Hovers Personalizados por Tecnología */
+/* Efectos Hovers Personalizados por TecnologÃ­a */
 .skill-card[data-skill="java"]:hover {
     border-color: rgba(249, 115, 22, 0.3);
     box-shadow: 0 15px 30px rgba(249, 115, 22, 0.15);
@@ -593,7 +593,7 @@
 
 
 /* ==========================================================================
-   5. SECCIÓN EDUCACIÓN (LÍNEA DE TIEMPO)
+   5. SECCIÃ“N EDUCACIÃ“N (LÃNEA DE TIEMPO)
    ========================================================================== */
 .timeline {
     position: relative;
@@ -602,7 +602,7 @@
     padding: 2rem 0;
 }
 
-/* Línea vertical central */
+/* LÃ­nea vertical central */
 .timeline::before {
     content: '';
     position: absolute;
@@ -646,7 +646,7 @@
 
 .timeline-content {
     background-color: var(--bg-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--bg-darker);
     border-radius: 12px;
     padding: 1.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -661,21 +661,27 @@
 
 .timeline-title {
     font-size: 1.2rem;
-    color: var(--text-primary);
+    color: var(--text-main);
     margin-bottom: 0.2rem;
 }
 
 .timeline-institution {
     display: block;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-style: italic;
     margin-bottom: 0.8rem;
 }
 
+.timeline-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
 
 /* ==========================================================================
-   6. SECCIÓN PROYECTOS (PORTAFOLIO CARDS)
+   6. SECCIÃ“N PROYECTOS (PORTAFOLIO CARDS)
    ========================================================================== */
 .projects-grid {
     display: grid;
@@ -686,7 +692,7 @@
 
 .project-card {
     background-color: var(--bg-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--bg-darker);
     border-radius: 16px;
     overflow: hidden;
     display: flex;
@@ -709,7 +715,7 @@
     align-items: center;
     font-family: monospace;
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -731,13 +737,13 @@
 
 .project-name {
     font-size: 1.25rem;
-    color: var(--text-primary);
+    color: var(--text-main);
     margin-bottom: 0.8rem;
 }
 
 .project-desc {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1.5rem;
     flex-grow: 1;
@@ -749,7 +755,7 @@
 
 .project-link-btn {
     display: inline-block;
-    color: var(--text-primary);
+    color: var(--text-main);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -763,21 +769,21 @@
 }
 
 /* ==========================================================================
-   TARJETA CONTENEDORA DE CURRÍCULUM (ESTILO BENTO PREMIUM)
+   TARJETA CONTENEDORA DE CURRÃCULUM (ESTILO BENTO PREMIUM)
    ========================================================================== */
 
 .cv-bento-card {
     margin: 30px 0;
     padding: 24px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: var(--bg-secondary);
+    border: 1px solid var(--bg-darker);
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2),
         inset 0 1px 1px rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 
-    /* Disposición flexible responsiva */
+    /* DisposiciÃ³n flexible responsiva */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -785,7 +791,7 @@
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* En tablets y PC se alinea horizontalmente con el botón a la derecha */
+/* En tablets y PC se alinea horizontalmente con el botÃ³n a la derecha */
 @media (min-width: 576px) {
     .cv-bento-card {
         flex-direction: row;
@@ -832,25 +838,25 @@
 .cv-card-title {
     margin: 0 0 6px 0;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: var(--text-main);
     font-weight: 700;
 }
 
 .cv-card-subtitle {
     margin: 0;
     font-size: 0.9rem;
-    color: #64748b;
+    color: var(--text-muted);
     line-height: 1.5;
     max-width: 400px;
 }
 
-/* --- Botón de Acción Interactivo --- */
+/* --- BotÃ³n de AcciÃ³n Interactivo --- */
 .btn-download-cv {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 0.9rem;
     font-weight: 600;
     padding: 12px 24px;
@@ -868,18 +874,18 @@
     transition: transform 0.25s ease;
 }
 
-/* --- Efectos Hover del Botón --- */
+/* --- Efectos Hover del BotÃ³n --- */
 .btn-download-cv:hover {
     background: rgba(168, 85, 247, 0.12);
-    /* Tinte púrpura */
+    /* Tinte pÃºrpura */
     border-color: rgba(168, 85, 247, 0.5);
-    /* Borde neón */
+    /* Borde neÃ³n */
     box-shadow: 0 8px 20px rgba(168, 85, 247, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
 
-/* Animación interactiva: el icono simula bajar para descargar */
+/* AnimaciÃ³n interactiva: el icono simula bajar para descargar */
 .btn-download-cv:hover .btn-cv-icon {
     transform: translateY(2px) scale(1.05);
 }
@@ -888,7 +894,7 @@
     transform: translateY(0) scale(0.98);
 }
 
-/* --- Animación de pulso para el punto verde --- */
+/* --- AnimaciÃ³n de pulso para el punto verde --- */
 @keyframes pulseGlow {
     0% {
         opacity: 0.6;
@@ -948,7 +954,7 @@
 
 .photo-overlay span {
     font-size: 0.8rem;
-    color: #94a3b8;
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1090,7 +1096,7 @@
 }
 
 /* ==========================================================================
-   3. SECCIÓN DE COMENTARIOS (Estilos Neon)
+   3. SECCIÃ“N DE COMENTARIOS (Estilos Neon)
    ========================================================================== */
 .commentbox {
     background-color: var(--bg-secondary);

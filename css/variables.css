@@ -68,8 +68,6 @@ html {
     scroll-behavior: smooth;
     /* Desplazamiento suave al dar clic en el menú */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-primary);
-    color: var(--text-main);
 }
 
 body {
@@ -77,6 +75,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     /* Evita scrolls horizontales accidentales en móviles */
+    background-color: var(--bg-primary);
+    color: var(--text-main);
 }
 
 /* ==========================================================================
