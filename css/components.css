@@ -405,6 +405,18 @@
     background: linear-gradient(135deg, #a855f7, #ec4899);
 }
 
+.badge-spring {
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.badge-css {
+    background: linear-gradient(135deg, #0ea5e9, #7dd3fc);
+}
+
+.badge-js {
+    background: linear-gradient(135deg, #facc15, #f97316);
+}
+
 /* Contenedor del Progreso Circular */
 .circle-progress {
     position: relative;
@@ -509,6 +521,33 @@
     background: rgba(236, 72, 153, 0.12);
     border-color: rgba(236, 72, 153, 0.4);
     box-shadow: 0 0 15px rgba(236, 72, 153, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.skill-card[data-skill="spring"]:hover .skill-interactive-badge {
+    color: #ffffff;
+    background: rgba(74, 222, 128, 0.14);
+    border-color: rgba(74, 222, 128, 0.4);
+    box-shadow: 0 0 15px rgba(74, 222, 128, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.skill-card[data-skill="css3"]:hover .skill-interactive-badge {
+    color: #ffffff;
+    background: rgba(59, 130, 246, 0.14);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.skill-card[data-skill="javascript"]:hover .skill-interactive-badge {
+    color: #ffffff;
+    background: rgba(249, 115, 22, 0.14);
+    border-color: rgba(249, 115, 22, 0.4);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2),
         inset 0 1px 1px rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
 }
@@ -900,43 +939,136 @@
 
 /* --- Limpieza y Estilo para CommentBox --- */
 
-/* Ajustamos el contenedor principal */
+#comentarios {
+    padding: 100px 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(15, 23, 42, 0.98) 100%);
+}
+
+#comentarios .section-title-container {
+    max-width: 980px;
+    margin: 0 auto 30px;
+}
+
 #comentarios .commentbox {
     background: transparent !important;
-    /* Quitamos el fondo propio del widget */
     border: none !important;
     padding: 0 !important;
     box-shadow: none !important;
 }
 
-/* Forzamos a que el interior sea más minimalista */
 #commentbox-container,
 .commentbox-container {
-    background: rgba(255, 255, 255, 0.02) !important;
-    border: 1px solid rgba(255, 255, 255, 0.06) !important;
-    border-radius: 20px !important;
-    padding: 25px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: rgba(15, 23, 42, 0.95) !important;
+    border: 1px solid rgba(56, 189, 248, 0.18) !important;
+    border-radius: 28px !important;
+    padding: 28px !important;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.35) !important;
 }
 
-/* Cambiamos el color del botón "Sign In" para que sea más elegante */
 .commentbox-container .button {
     background-color: var(--accent) !important;
-    /* Usa tu color de acento principal */
     border: none !important;
-    border-radius: 8px !important;
+    border-radius: 12px !important;
     color: white !important;
-    padding: 8px 16px !important;
-    font-weight: 600 !important;
-    transition: all 0.3s ease !important;
+    padding: 10px 18px !important;
+    font-weight: 700 !important;
+    transition: all 0.25s ease !important;
 }
 
 .commentbox-container .button:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.15);
     transform: translateY(-2px);
 }
 
-/* Escondemos elementos innecesarios para que se vea más limpio */
+.commentbox-container input,
+.commentbox-container textarea,
+.commentbox-container .commentbox-field,
+.commentbox-container .comment-input,
+.commentbox-container .commentbox-textarea {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    color: #e2e8f0 !important;
+    border-radius: 14px !important;
+}
+
+.commentbox-container input::placeholder,
+.commentbox-container textarea::placeholder {
+    color: rgba(226, 232, 240, 0.6) !important;
+}
+
+.commentbox-container .commentbox-row,
+.commentbox-container .commentbox-item,
+.commentbox-container .comment,
+.commentbox-container .commentbox-comment {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 22px !important;
+}
+
+.commentbox-container .commentbox-author,
+.commentbox-container .commentbox-content,
+.commentbox-container .commentbox-text,
+.commentbox-container .commentbox-message,
+.commentbox-container .comment-text {
+    color: #e2e8f0 !important;
+}
+
+.commentbox-container .commentbox-avatar,
+.commentbox-container .commentbox-username,
+.commentbox-container .commentbox-time {
+    color: rgba(226, 232, 240, 0.8) !important;
+}
+
 .commentbox-footer,
-.commentbox-header {
+.commentbox-header,
+.commentbox-container .commentbox-row {
     border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.commentbox-container .commentbox-header {
+    margin-bottom: 18px !important;
+}
+
+.commentbox-container .commentbox-label {
+    color: rgba(226, 232, 240, 0.75) !important;
+}
+
+.commentbox-container .commentbox-submit {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.commentbox-container .button,
+.commentbox-container .commentbox-submit {
+    text-transform: uppercase !important;
+    letter-spacing: 0.9px !important;
+}
+
+.commentbox-container .commentbox-avatar {
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.commentbox-container .commentbox-item {
+    padding: 18px !important;
+}
+
+.commentbox-container .commentbox-row {
+    padding: 18px !important;
+}
+
+.commentbox-container .button:focus,
+.commentbox-container input:focus,
+.commentbox-container textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.18) !important;
+}
+
+.commentbox-container .commentbox-comment {
+    margin-bottom: 18px !important;
+}
+
+.commentbox-container .commentbox-footer {
+    padding-top: 16px !important;
 }

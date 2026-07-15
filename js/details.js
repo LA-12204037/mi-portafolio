@@ -1,25 +1,32 @@
 // Base de datos de información detallada de tus habilidades
 const skillsData = {
     java: {
-        title: "Java & Spring Boot",
+        title: "Java — Programación Backend",
         emoji: "☕",
         badgeClass: "badge-java",
-        description: "Especializado en el desarrollo de arquitecturas de backend robustas, escalables y seguras. Experiencia diseñando APIs RESTful bajo buenas prácticas (principios SOLID), inyección de dependencias con Spring Framework, seguridad con Spring Security y persistencia de datos eficiente utilizando Spring Data JPA / Hibernate.",
-        tools: ["Java 17+", "Spring Boot", "Spring Security", "Hibernate", "JUnit 5", "Maven"]
+        description: "Dominio de Java orientado a objetos, patrones de diseño y lógica backend para construir aplicaciones escalables, mantenibles y seguras.",
+        tools: ["Java 17+", "OOP", "Patrones de Diseño", "Pruebas unitarias", "Maven", "Estructuras de Datos"]
     },
-    sql: {
-        title: "SQL & Bases de Datos",
-        emoji: "🗄️",
-        badgeClass: "badge-sql",
-        description: "Sólido dominio en el modelado de bases de datos relacionales y optimización de motores SQL. Capacidad para diseñar esquemas normalizados, escribir consultas complejas altamente eficientes, implementar triggers, funciones y procedimientos almacenados, además de asegurar la integridad referencial y el rendimiento bajo carga.",
-        tools: ["PostgreSQL", "MySQL", "SQL Server", "DBeaver", "Optimización de Queries", "Modelado Entidad-Relación"]
+    spring: {
+        title: "Spring Framework",
+        emoji: "⚙️",
+        badgeClass: "badge-spring",
+        description: "Especialista en el ecosistema Spring para desarrollar APIs REST, servicios web, seguridad y acceso eficiente a datos en aplicaciones empresariales.",
+        tools: ["Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "REST API", "Configuración basada en anotaciones"]
     },
-    frontend: {
-        title: "Desarrollo Frontend Nativo",
+    css3: {
+        title: "CSS3 — Diseño Responsive",
+        emoji: "🎨",
+        badgeClass: "badge-css",
+        description: "Creación de interfaces visuales profesionales con CSS3, animaciones, layouts flexibles y diseños adaptables para una experiencia consistente.",
+        tools: ["Flexbox", "CSS Grid", "Responsive Design", "Animaciones CSS", "Variables CSS", "Tipografía web"]
+    },
+    javascript: {
+        title: "JavaScript Moderno",
         emoji: "💻",
-        badgeClass: "badge-front",
-        description: "Pasión por construir interfaces web modernas, dinámicas y altamente responsivas. Enfoque en la escritura de HTML5 semántico, maquetación adaptativa mediante CSS3 avanzado (Flexbox, CSS Grid) y modularización del lado del cliente utilizando JavaScript Vanilla moderno (ES6+), manipulación del DOM y consumo asíncrono de APIs con Fetch.",
-        tools: ["HTML5 Semántico", "CSS3 / Sass", "JavaScript ES6+", "Vite", "Responsive Design", "Manipulación del DOM"]
+        badgeClass: "badge-js",
+        description: "Programación interactiva del lado del cliente con JavaScript ES6+, manipulación del DOM, asincronía y lógica de negocio clara y eficiente.",
+        tools: ["ES6+", "DOM", "Fetch", "Async/Await", "Eventos", "Modularización"]
     }
 };
 
