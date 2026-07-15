@@ -33,7 +33,7 @@
 .btn-primary:hover {
     background-color: #53c5f8;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+    box-shadow: var(--neon-box-shadow);
 }
 
 .btn-hero {
@@ -448,6 +448,7 @@
     width: 150px;
     height: 150px;
     /* Rota para que inicie arriba al centro */
+    transform: rotate(-90deg);
 }
 
 /* Círculo de Fondo (Canaleta Gris) */
@@ -462,9 +463,9 @@
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    stroke-dasharray: 345 !important;
-    /* Dejamos el offset libre para que JS lo maneje */
-    transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Inicialmente en 0 para animación */
+    stroke-dasharray: 0, 345.575 !important;
+    transition: stroke-dasharray 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Texto de Porcentaje Centralizado */
@@ -654,6 +655,8 @@
 
 .timeline-item:hover .timeline-content {
     transform: translateX(5px);
+    box-shadow: var(--neon-box-shadow);
+    border-color: rgba(56, 189, 248, 0.4);
 }
 
 .timeline-title {
@@ -694,7 +697,8 @@
 
 .project-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(56, 189, 248, 0.2);
+    box-shadow: var(--neon-box-shadow);
+    border-color: rgba(56, 189, 248, 0.5);
 }
 
 .project-image-placeholder {
@@ -953,7 +957,7 @@
 
 #comentarios {
     padding: 100px 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 1) 0%, rgba(15, 23, 42, 0.98) 100%);
+    background-color: var(--bg-primary);
 }
 
 #comentarios .section-title-container {
@@ -1083,4 +1087,21 @@
 
 .commentbox-container .commentbox-footer {
     padding-top: 16px !important;
+}
+
+/* ==========================================================================
+   3. SECCIÓN DE COMENTARIOS (Estilos Neon)
+   ========================================================================== */
+.commentbox {
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--neon-box-shadow);
+    transition: all var(--transition-normal);
+}
+
+.commentbox:hover {
+    border-color: rgba(56, 189, 248, 0.6);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4), 0 0 30px rgba(56, 189, 248, 0.2);
 }

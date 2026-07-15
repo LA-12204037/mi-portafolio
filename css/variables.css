@@ -17,6 +17,8 @@
     /* Azul cian oscuro para estados hover */
     --accent-glow: rgba(56, 189, 248, 0.15);
     /* Resplandor sutil para efectos focus */
+    --neon-box-shadow: 0 0 10px rgba(56, 189, 248, 0.3), 0 0 20px rgba(56, 189, 248, 0.1);
+    --neon-text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 
     /* Colores de Texto */
     --text-main: #f8fafc;
@@ -33,6 +35,24 @@
     /* Bordes redondeados estándar para tarjetas */
     --radius-sm: 4px;
     /* Bordes redondeados para etiquetas y pequeños botones */
+}
+
+/* ==========================================================================
+   PALETA LIGHT MODE (Se activa con la clase .light-mode en body)
+   ========================================================================== */
+body.light-mode {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-darker: #e2e8f0;
+
+    --accent: #0284c7;
+    --accent-hover: #0369a1;
+    --accent-glow: rgba(2, 132, 199, 0.15);
+    --neon-box-shadow: 0 0 10px rgba(2, 132, 199, 0.2), 0 0 20px rgba(2, 132, 199, 0.1);
+    --neon-text-shadow: 0 0 4px rgba(2, 132, 199, 0.3);
+
+    --text-main: #0f172a;
+    --text-muted: #475569;
 }
 
 /* ==========================================================================
@@ -70,6 +90,7 @@ body {
 
 .text-highlight {
     color: var(--accent);
+    text-shadow: var(--neon-text-shadow);
 }
 
 .text-muted {

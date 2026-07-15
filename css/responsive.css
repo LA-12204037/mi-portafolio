@@ -52,7 +52,8 @@
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: rgba(15, 23, 42, 0.98);
+        background-color: var(--bg-primary);
+        opacity: 0.98;
         backdrop-filter: blur(10px);
         flex-direction: column;
         gap: 0;
@@ -180,6 +181,10 @@
 
     .timeline-item {
         padding-left: 36px;
+    }
+
+    .timeline-dot {
+        left: 3px;
     }
 
     .timeline-date,

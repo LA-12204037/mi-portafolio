@@ -51,20 +51,28 @@
         <a href="#bienvenida" class="brand-link">Mi <span class="text-highlight">Portafolio</span></a>
       </div>
 
-      <!-- Botón de Menú Móvil -->
-      <button class="mobile-menu-btn" aria-label="Abrir menú" id="mobile-menu-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
       <!-- Menú de navegación semántico -->
       <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="#sobre-mi" class="nav-link active">Sobre Mí</a></li>
         <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
         <li class="nav-item"><a href="#educacion" class="nav-link">Educación</a></li>
         <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li class="nav-item"><a href="#comentarios" class="nav-link">Comentarios</a></li>
       </ul>
+
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+        <!-- Botón Modo Claro/Oscuro -->
+        <button class="theme-toggle-btn" aria-label="Cambiar tema" id="theme-toggle-btn" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 5px; border-radius: 50%; transition: background-color 0.3s;">
+          <img src="assets/modoclaro.png" alt="Cambiar Tema" id="theme-toggle-icon" style="width: 24px; height: 24px; object-fit: contain; filter: brightness(0) invert(1);">
+        </button>
+
+        <!-- Botón de Menú Móvil -->
+        <button class="mobile-menu-btn" aria-label="Abrir menú" id="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -116,11 +124,20 @@
             </div>
           </div>
 
+        </div> <!-- CIERRA about-left-side -->
+
+        <!-- COLUMNA DERECHA: Apartado para la foto -->
+        <div class="about-right-side" style="display: flex; align-items: stretch;">
+          <div class="about-photo-box" style="margin-top: 0; height: auto; min-height: 350px;">
+            <img src="https://via.placeholder.com/600x800/1e293b/38bdf8?text=Tu+Foto+Aqu%C3%AD" alt="Foto de Perfil" class="about-photo-img">
+            <div class="photo-overlay">
+              <span>Luciano Alberto</span>
+            </div>
+          </div>
         </div>
+      </div> <!-- CIERRA about-grid -->
 
-      </div> <!-- CIERRA about-left-side y about-grid -->
-
-      <!-- COLUMNA DERECHA: Textos principales y mini-tarjetas horizontales -->
+      <!-- Textos principales y mini-tarjetas horizontales -->
       <div class="about-content">
         <h3 class="about-subtitle">Desarrollo con propósito, precisión y visión técnica</h3>
         <p class="about-text">
@@ -173,7 +190,7 @@
           </div>
 
           <div class="circle-progress">
-            <svg class="circle-svg">
+            <svg class="circle-svg" viewBox="0 0 140 140">
               <defs>
                 <linearGradient id="grad-java" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#ea580c" />
@@ -198,7 +215,7 @@
           </div>
 
           <div class="circle-progress">
-            <svg class="circle-svg">
+            <svg class="circle-svg" viewBox="0 0 140 140">
               <defs>
                 <linearGradient id="grad-spring" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#22c55e" />
@@ -223,7 +240,7 @@
           </div>
 
           <div class="circle-progress">
-            <svg class="circle-svg">
+            <svg class="circle-svg" viewBox="0 0 140 140">
               <defs>
                 <linearGradient id="grad-css" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#0ea5e9" />
@@ -249,7 +266,7 @@
           </div>
 
           <div class="circle-progress">
-            <svg class="circle-svg">
+            <svg class="circle-svg" viewBox="0 0 140 140">
               <defs>
                 <linearGradient id="grad-js" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#facc15" />
@@ -418,7 +435,11 @@
   <!-- Script de CommentBox.io -->
   <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
   <script>
-    commentBox('5728155998355456-proj');
+    commentBox('5728155998355456-proj', {
+      textColor: '#f8fafc',
+      subtextColor: '#94a3b8',
+      backgroundColor: '#1e293b'
+    });
   </script>
 </body>
 

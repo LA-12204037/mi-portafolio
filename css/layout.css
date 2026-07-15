@@ -30,8 +30,8 @@
    BARRA DE NAVEGACIÓN (Menú Sticky/Fijo)
    ========================================================================== */
 .main-header {
-    background-color: rgba(15, 23, 42, 0.9);
-    /* Fondo translúcido con opacidad */
+    background-color: var(--bg-primary);
+    opacity: 0.95;
     backdrop-filter: blur(8px);
     /* Efecto de vidrio esmerilado */
     position: sticky;
@@ -39,8 +39,17 @@
     top: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid var(--bg-secondary);
     transition: var(--transition-normal);
+}
+
+.main-header.scrolled {
+    background-color: var(--bg-secondary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.main-header.scrolled .navbar {
+    padding: 5px 0;
 }
 
 .navbar {

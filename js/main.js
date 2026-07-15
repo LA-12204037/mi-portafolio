@@ -11,6 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('nav-menu');
 
     /* ==========================================================================
+       0.5. MODO CLARO / OSCURO (Toggle)
+       ========================================================================== */
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const isLight = document.body.classList.toggle('light-mode');
+            if (isLight) {
+                // Modo Claro: ícono negro
+                themeToggleIcon.style.filter = 'brightness(0)';
+            } else {
+                // Modo Oscuro: ícono blanco
+                themeToggleIcon.style.filter = 'brightness(0) invert(1)';
+            }
+        });
+    }
+
+    /* ==========================================================================
        0. MENÚ MÓVIL (Toggle)
        ========================================================================== */
     if (mobileMenuBtn && navMenu) {
@@ -33,13 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const handleHeaderScroll = () => {
         if (window.scrollY > 50) {
-            header.style.padding = '5px 0';
-            header.style.backgroundColor = 'rgba(15, 23, 42, 0.95)';
-            header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+            header.classList.add('scrolled');
         } else {
-            header.style.padding = '15px 0';
-            header.style.backgroundColor = 'rgba(15, 23, 42, 0.9)';
-            header.style.boxShadow = 'none';
+            header.classList.remove('scrolled');
         }
     };
     window.addEventListener('scroll', handleHeaderScroll);
@@ -98,10 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (percentText && progressCircle) {
                     const targetPercent = parseInt(percentText.textContent, 10) || 0;
                     percentText.textContent = "0%";
-                    const offsetValue = 345 - (345 * targetPercent) / 100;
+                    const offsetValue = (345.575 * targetPercent) / 100;
 
                     setTimeout(() => {
-                        progressCircle.style.setProperty('stroke-dashoffset', offsetValue, 'important');
+                        progressCircle.style.setProperty('stroke-dasharray', `${offsetValue}, 345.575`, 'important');
                     }, 100);
                     animateNumber(percentText, targetPercent);
                 }
